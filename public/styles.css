@@ -13,10 +13,11 @@ body {
 }
 
 header {
-  background-color: #6930c3;
+  background-color:rgba(93, 12, 255, 1);
   margin: auto -16px;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  
 }
 
 header h1 {
@@ -37,7 +38,7 @@ footer p {
   color: #ccc;
 }
 .note {
-  background: #fff;
+  background:rgba(255, 0, 250, 1);
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
   padding: 10px;
@@ -48,6 +49,29 @@ footer p {
 .note h1 {
   font-size: 1.1em;
   margin-bottom: 6px;
+}
+.note:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(255, 0, 250, 1) 100%
+  );
+}
+
+.note:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 150, 12, 0.959) 0%,
+    rgb(233, 250, 0) 100%
+  );
+}
+
+.note:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgb(20, 255, 224) 0%,
+    rgba(17, 188, 255, 0.911) 100%
+  );
 }
 .note p {
   font-size: 1.1em;
